@@ -1,8 +1,8 @@
 /*Application: Project 2
  * Name: Dimitrius Morgan
  * Github User: dm2sh
- * Date: Sep 20, 2022
- * Version: 1.0
+ * Date: Sep 22, 2022
+ * Version: 2.0
  * Description: Inputting values with a keyboard, manipulating them with menu options, then comparing them
  */
 
@@ -14,35 +14,35 @@ public class morganProject2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner keyboard = new Scanner (System.in);
 		//Read input from keyboard
+		Scanner keyboard = new Scanner (System.in);
 		
+		//Store first number based off keyboard input
 		System.out.println("Type a Number");
 		int firstNumber = keyboard.nextInt();
-		//Store first number based off keyboard input
-		
+	
+		//Store second number based off keyboard input
 		System.out.println("Type a Second Number");
 		int secondNumber = keyboard.nextInt();
-		//Store second number based off keyboard input
 		
+		//Store third number based off keyboard input
 		System.out.println("Type a Third Number");
 		int thirdNumber = keyboard.nextInt();
-		//Store third number based off keyboard input
 		
-		int product = 0;
 		//Stores numerical product of any operation between the first and second number
-	
+		int product = 0;
+		
+		//Display menu options
 		System.out.println("Select a menu option");
 		System.out.println("1. Add");
 		System.out.println("2. Subtract");
 		System.out.println("3. Multiply");
 		System.out.println("4. Divide");
-		//Display menu options
 		
-		int menuSelection = keyboard.nextInt();
 		//Select a menu option based off keyboard input
+		int menuSelection = keyboard.nextInt();
 
-		//Execute an operation based on menu selection
+		//Execute a mathematical operation based on menu selection
 		switch (menuSelection)
 		{
 		case 1: 
